@@ -4,17 +4,17 @@
 
 #define ONE 1
 #define first_arr_idx_start 0
-void check_readings(int *array, int size);
+int check_readings(int *array, int size);
 
 int main()
 {
     int array[9] = {1,2,3,4,5,10,11,12,13};
     int size = sizeof(array);
-    check_readings(array,size);
+    int done = check_readings(array,size);
     return 0;
 }
 
-void check_readings(int *array, int size)
+int check_readings(int *array, int size)
 {
     int i=0;
     int j=0;
@@ -33,6 +33,7 @@ void check_readings(int *array, int size)
         {
             printf("%d," ,array[i]);
             count_1 = count_1 + ONE;
+            return 1;
         }
         else
         {
@@ -55,9 +56,11 @@ void check_readings(int *array, int size)
                     printf("%d," ,array[second_array]);
                     count_2 = count_2 + ONE;
                     j = j+ONE;
+                    return 1;
                 }
                 else
                 {
+                    return 0;
                     //do nothing
                 }
             }
