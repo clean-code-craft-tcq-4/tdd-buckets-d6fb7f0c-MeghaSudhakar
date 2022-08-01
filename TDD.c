@@ -18,7 +18,7 @@ int check_readings(int *array, int size)
     int i;
     for(i=0; i<size; i++)
     {
-        if (array[i+1] == array[i] + 1)
+        if ((array[i+1]) == (array[i] + 1))
         {
             count++;
             
