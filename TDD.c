@@ -16,7 +16,17 @@ int main()
 
 int check_readings(int *array, int size)
 {
-  return 2;
+    int count=0;
+    
+    for(i=0; i<size; i++)
+    {
+        if (array[i+1] == (array[i] + 1))
+        {
+            count = count+1;
+        }
+        
+    }
+  return count;
 }
 
 
