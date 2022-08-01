@@ -28,7 +28,7 @@ int check_readings(int *array, int size)
         }
         
     }
-    printf("count is %d\n", count);
+    printf("Array has %d readings\n", count-1);
     
   return count;
 }
