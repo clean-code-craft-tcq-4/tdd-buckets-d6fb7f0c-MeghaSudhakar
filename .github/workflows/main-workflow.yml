@@ -12,5 +12,5 @@ jobs:
 
     - name: tshirts pass
       run: |
-        g++ -Wall -Wextra -Werror TDD.c -o TDD.out
+        g++ -Wall -Wextra -Werror TDD.c, test.cpp -o TDD.out
         ./TDD.out
