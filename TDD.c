@@ -2,11 +2,7 @@
 #include <assert.h>
 #include <stdlib.h>
 
-#define ONE 1
-#define first_arr_idx_start 0
 int check_readings(int *array, int size);
-
-
 
 int main()
 {
@@ -22,7 +18,7 @@ int check_readings(int *array, int size)
     int i;
     for(i=0; i<size; i++)
     {
-        if (array[i+1] == (array[i] + 1))
+        if (array[i+1] == array[i] + 1)
         {
             count = count+1;
             printf("count is %d\n", count);
