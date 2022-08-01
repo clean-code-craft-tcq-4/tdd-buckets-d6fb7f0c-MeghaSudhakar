@@ -20,15 +20,15 @@ int check_readings(int *array, int size)
     {
         if (array[i+1] == array[i] + 1)
         {
-            count = count+1;
-            printf("count is %d\n", count);
+            count++;
+            
         }
         else
         {
         }
         
     }
-    
+    printf("count is %d\n", count);
     
   return count;
 }
