@@ -6,7 +6,7 @@ int check_readings(int *array, int size);
 
 int main()
 {
-    int array[9] = {1,2,3,4,5,10,11,12,13};
+    int array[5] = {1,2,4,5,6};
     int size = sizeof(array);
     int done = check_readings(array,size);
     return 0;
