@@ -6,7 +6,7 @@
 #define first_arr_idx_start 0
 int check_readings(int *array, int size);
 
-int count=0;
+
 
 int main()
 {
@@ -18,18 +18,22 @@ int main()
 
 int check_readings(int *array, int size)
 {
-    
+    int count=0;
     int i;
     for(i=0; i<size; i++)
     {
         if (array[i+1] == (array[i] + 1))
         {
             count = count+1;
+            printf("count is %d\n", count);
+        }
+        else
+        {
         }
         
     }
     
-    printf("count is %d\n", count);
+    
   return count;
 }
 
