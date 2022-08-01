@@ -6,7 +6,7 @@
 TEST_CASE("checkAndAlert two") 
 {
 
-  int array[9] = {1,2,3,4,5,10,11,12,13};
+  int array[2] = {4,5};
   int size = sizeof(array);
-  REQUIRE(check_readings(array,size) == 1);
+  REQUIRE(check_readings(array,size) == 2);
 }
