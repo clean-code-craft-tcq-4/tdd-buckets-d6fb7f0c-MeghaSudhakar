@@ -29,7 +29,7 @@ int check_readings(int *array, int size)
         
     }
     
-    printf("count is %d\n", count)
+    printf("count is %d\n", count);
   return count;
 }
 
