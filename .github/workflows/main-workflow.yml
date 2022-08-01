@@ -9,8 +9,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-
-    - name: tshirts pass
-      run: |
-        g++ -Wall -Wextra -Werror TDD.c, test.cpp -o TDD.out
-        ./TDD.out
+    - name: build
+      run: gcc -Wall -Wextra -o TDD *.c
+      
+    - name: run
+      run: ./TDD
