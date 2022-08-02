@@ -14,7 +14,7 @@ int check_readings(int *array, int size)
         {
             count= count+1;  
             first = array[i];
-            printf(" %d - %d", array[i], array[i+1]);
+            //printf(" %d - %d", array[i], array[i+1]);
         }  
         else
         {
