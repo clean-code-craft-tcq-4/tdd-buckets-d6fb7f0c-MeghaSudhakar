@@ -14,6 +14,7 @@ int check_readings(int *array, int size)
             {
             printf("Not a valid array\n");
             count=0;
+                return count;
                 break;
             }
             
@@ -28,7 +29,7 @@ int check_readings(int *array, int size)
                         
                     }
                 }
-                 
+                 return count;
                 break;
             }
             
@@ -36,7 +37,7 @@ int check_readings(int *array, int size)
             break;
             //count = read(array, size);       
     } 
-  return count;
+ +// return count;
 }
 
 /*int read(int *array, int size)
