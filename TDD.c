@@ -37,7 +37,7 @@ int check_readings(int *array, int size)
             break;
             //count = read(array, size);       
     } 
- +// return count;
+
 }
 
 /*int read(int *array, int size)
