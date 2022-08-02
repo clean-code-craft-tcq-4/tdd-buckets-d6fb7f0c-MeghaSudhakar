@@ -28,9 +28,9 @@ TEST_CASE("Test case 3")
 
 TEST_CASE("Test case 4") 
 {
-  int array[7] = {1,4,5,6,7,9,13};
+  int array[9] = {1,4,5,6,7,9,13,14,15};
   int size = sizeof(array);
-  REQUIRE(check_readings(array,size) == 3);
+  REQUIRE(check_readings(array,size) == 5);
 }
 
 TEST_CASE("Test case 5") 
