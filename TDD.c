@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include "TDD.h"
 
-int check_readings(int *array, int size);
+
 
 int main()
 {
