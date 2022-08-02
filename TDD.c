@@ -13,7 +13,6 @@ int check_readings(int *array, int size)
         case 1:
             {
             printf("Not a valid array\n");
-            count=0;
                 return count;
                 break;
             }
@@ -23,13 +22,15 @@ int check_readings(int *array, int size)
                 for(i=0; i<size; i++)
                 {
                     if ((array[i+1]) == (array[i] + 1))
+                    {  
+                        printf(" %d - %d", array[i], array[i+1]);              
+                    }
+                    else
                     {
-                        count= 2;  
-                        printf(" %d - %d", array[i], array[i+1]);
                         
                     }
                 }
-                 return count;
+                 return 2;
                 break;
             }
             
