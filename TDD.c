@@ -13,12 +13,7 @@ int main()
     return 0;
 }
 
-int check_readings(int *array, int size)
-{
-   
-    
-  return 2;
-}
+
 
 /*
 int check_readings(int *array, int size)
