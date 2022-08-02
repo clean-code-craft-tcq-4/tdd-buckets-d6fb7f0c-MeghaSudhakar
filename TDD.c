@@ -28,6 +28,7 @@ int check_readings(int *array, int size)
                         
                     }
                 }
+                 count= count+1; 
                 break;
             }
             
