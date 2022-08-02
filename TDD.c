@@ -13,7 +13,7 @@ int check_readings(int *array, int size)
         if ((array[i+1]) == (array[i] + 1))
         {
             count= count+1;   
-            printf(" %d -", array[i]);
+            printf(" %d - %d", array[i], array[i+1]);
         }  
         else
         {
