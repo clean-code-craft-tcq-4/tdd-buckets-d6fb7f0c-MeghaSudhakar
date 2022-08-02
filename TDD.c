@@ -12,7 +12,10 @@ int main()
     int done = check_readings(array,size);
     return 0;
 }
-
+int check_readings(int *array, int size)
+{
+    return 2;
+}
 
 
 /*
