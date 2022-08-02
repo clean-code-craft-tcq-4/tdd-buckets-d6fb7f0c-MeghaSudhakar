@@ -12,6 +12,15 @@ TEST_CASE("Test case 1")
   REQUIRE(check_readings(array,size) == 1);
 }
 
+
+TEST_CASE("Test case 0") 
+{
+  int array[1] = {4};
+  int size = sizeof(array);
+  REQUIRE(check_readings(array,size) == 0);
+}
+
+/*
 TEST_CASE("Test case 2") 
 {
   int array[3] = {4,5,6};
@@ -19,7 +28,6 @@ TEST_CASE("Test case 2")
   REQUIRE(check_readings(array,size) == 2);
 }
 
-/*
 TEST_CASE("Test case 3") 
 {
   int array[4] = {4,5,6,9};
