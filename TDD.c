@@ -13,6 +13,7 @@ int check_readings(int *array, int size)
         case 1:
             {
             printf("Not a valid array\n");
+                count = 0;
                 return count;
                 break;
             }
