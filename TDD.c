@@ -38,6 +38,7 @@ int read(int *array, int size)
     
     int first=0;
     int end=0;
+    int i, count;
     
     for(i=0; i<size; i++)
     {
