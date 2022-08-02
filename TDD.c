@@ -19,10 +19,12 @@ int check_readings(int *array, int size)
         else
         {
             second = array[i-1];
+            //if(!count)
            // printf("\n");
         }
         
     }
+    printf("%d - %d\n", first, second);
     printf("\nArray has %d readings\n", count+1);
     
   return count;
