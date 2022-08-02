@@ -11,7 +11,11 @@ int check_readings(int *array, int size)
     switch(size)
     {
         case 1:
+            {
             printf("Not a valid array\n");
+            count=0;
+                break;
+            }
             
         case 2:
             {
@@ -28,7 +32,7 @@ int check_readings(int *array, int size)
             }
             
         default:
-            read(array, size);       
+            count = read(array, size);       
     } 
   return count;
 }
@@ -53,6 +57,8 @@ int read(int *array, int size)
         }
     }  
     print(first,end,count);
+    
+    return count;
 }
 
 void print(int first, int end, int count)
