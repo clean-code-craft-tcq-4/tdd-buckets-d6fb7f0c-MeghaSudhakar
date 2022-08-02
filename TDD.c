@@ -19,7 +19,7 @@ int check_readings(int *array, int size)
         else
         {
             second = array[i-1];
-            printf("\n");
+           // printf("\n");
         }
         
     }
