@@ -14,7 +14,7 @@ int check_readings(int *array, int size)
             {
             printf("Not a valid array\n");
                 
-                return 0;
+                return 1;
                 break;
             }
             
