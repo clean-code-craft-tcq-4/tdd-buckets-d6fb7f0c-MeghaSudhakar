@@ -32,12 +32,12 @@ int check_readings(int *array, int size)
             }
             
         default:
-            count = read(array, size);       
+            //count = read(array, size);       
     } 
   return count;
 }
 
-int read(int *array, int size)
+/*int read(int *array, int size)
 {
     
     int first=0;
@@ -65,3 +65,4 @@ void print(int first, int end, int count)
 {
     
 }
+*/
