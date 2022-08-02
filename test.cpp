@@ -5,17 +5,16 @@
 #include <stdlib.h>
 #include "TDD.h"
 
-TEST_CASE("Test case 1") 
-{
-  int array[2] = {4,5};
-  int size = sizeof(array);
-  REQUIRE(check_readings(array,size) == 1);
-}
-
-
 TEST_CASE("Test case 0") 
 {
   int array[1] = {4};
+  int size = sizeof(array);
+  REQUIRE(check_readings(array,size) == 0);
+}
+
+TEST_CASE("Test case 1") 
+{
+  int array[2] = {4,5};
   int size = sizeof(array);
   REQUIRE(check_readings(array,size) == 2);
 }
