@@ -8,68 +8,23 @@ int check_readings(int *array, int size)
     int count=0;
     int first,second,i;
     
-    switch(size)
-    {
-        case 1:
-            {
-            printf("Not a valid array\n");
-                
-                return 1;
-                break;
-            }
-            
-        case 2:
-            {
-                for(i=0; i<size; i++)
-                {
-                    if ((array[i+1]) == (array[i] + 1))
-                    {  
-                        printf(" %d - %d", array[i], array[i+1]);              
-                    }
-                    else
-                    {
-                        
-                    }
-                }
-                 return 2;
-                break;
-            }
-            
-        default:
-            
-            count = read(array, size);   
-            //return count;
-            break;
-    } 
-
-}
-
-int read(int *array, int size)
-{
-    
-    int first=0;
-    int end=0;
-    int i, count;
-    
     for(i=0; i<size; i++)
     {
         if ((array[i+1]) == (array[i] + 1))
         {
-            count= count+1;
+            count= count+1;  
             first = array[i];
-        }
+            printf(" %d - %d", array[i], array[i+1]);
+        }  
         else
         {
-            end = array[i-1];
+            second = array[i-1];
+            printf("\n");
         }
-    }  
-    print(first,end,count);
+        
+    }
+    printf("\nArray has %d readings\n", count+1);
     
-    return count;
-}
-
-void print(int first, int end, int count)
-{
-    
+  return count;
 }
 
