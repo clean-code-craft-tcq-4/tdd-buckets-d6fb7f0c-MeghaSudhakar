@@ -32,6 +32,7 @@ int check_readings(int *array, int size)
             }
             
         default:
+            break;
             //count = read(array, size);       
     } 
   return count;
