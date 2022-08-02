@@ -5,21 +5,9 @@
 
 
 
-/*void main()
-{
-    int array[5] = {1,2,4,5,6};
-    int size = sizeof(array);
-    int done = check_readings(array,size);
-    return 0;
-}*/
-
-int check_readings(int *array, int size)
-{
-    return 2;
-}
 
 
-/*
+
 int check_readings(int *array, int size)
 {
     int count=0;
@@ -39,7 +27,7 @@ int check_readings(int *array, int size)
     printf("Array has %d readings\n", count-1);
     
   return count;
-}*/
+}
 
 
 
