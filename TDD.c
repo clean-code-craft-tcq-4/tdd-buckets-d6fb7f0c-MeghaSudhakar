@@ -17,6 +17,7 @@ int check_readings(int *array, int size)
         }  
         else
         {
+            printf("\n");
         }
         
     }
