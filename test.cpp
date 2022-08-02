@@ -23,7 +23,7 @@ TEST_CASE("Test case 3")
 {
   int array[4] = {4,5,6,9};
   int size = sizeof(array);
-  REQUIRE(check_readings(array,size) == 3);
+  REQUIRE(check_readings(array,size) == 2);
 }
 
 
