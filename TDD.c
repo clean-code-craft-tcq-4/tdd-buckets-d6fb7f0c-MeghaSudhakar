@@ -15,6 +15,14 @@ int main()
 
 int check_readings(int *array, int size)
 {
+   
+    
+  return 2;
+}
+
+/*
+int check_readings(int *array, int size)
+{
     int count=0;
     int i;
     
@@ -32,7 +40,7 @@ int check_readings(int *array, int size)
     printf("Array has %d readings\n", count-1);
     
   return count;
-}
+}*/
 
 
 
