@@ -8,7 +8,6 @@
 
 int main()
 {
-   // printf("Hello World");
     int i;
     int array[10] = {1,3,3,5,4,10,11,12,14,15};
     int arraysize = sizeof(array)/sizeof(array[0]);
@@ -65,55 +64,11 @@ void printArray(int array[], int size)
     printf("\n"); 
 } 
 
-void Find_range(int *array, int arraysize)
-{
-  /*
-    //(array[i+1] - array[i])
-    int i;
-    static int count,flag =0;
-    static int first,last,tempz,first_temp,temp=0;
-
-
-    for(i=0; i<arraysize; i++)
-    {
-        if((((array[i+1] - array[i]) == 0) || ((array[i+1] - array[i]) == 1)))
-        {
-            count = count+1;
-            
-            flag=1;
-        }
-        else
-        {
-            if(flag)
-            {
-                first_temp = first_temp + (i - count);
-                
-                first = array[first_temp];
-                
-                temp = temp + count;
-                last = array[temp];
-            
-                printf("%d - %d, %d readings\n",first,last, (count+1));
-                first =0;
-                last =0;
-
-                
-                flag=0;
-            }
-            
-           
-            
-            
-        }
-    }*/
-}
-
-
 int check_readings(int *array, int size)
 {
     int count=0;
-    int first,second,i;
-    int second_array[10];
+    int i;
+    
     
     for(i=0; i<size; i++)
     {
