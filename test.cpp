@@ -5,39 +5,40 @@
 #include <stdlib.h>
 #include "TDD.h"
 
-TEST_CASE("Test case 1") 
+/*TEST_CASE("Test case 1") 
 {
   int array[2] = {4,5};
-  int size = sizeof(array);
+  int size = sizeof(array)/sizeof(array[0]);
+  sort_array(array,size);
   REQUIRE(check_readings(array,size) == 1);
 }
-
 
 TEST_CASE("Test case 2") 
 {
   int array[3] = {4,5,6};
-  int size = sizeof(array);
+  int size = sizeof(array)/sizeof(array[0]);
   REQUIRE(check_readings(array,size) == 2);
 }
 
 TEST_CASE("Test case 3") 
 {
   int array[4] = {4,5,6,9};
-  int size = sizeof(array);
+  int size = sizeof(array)/sizeof(array[0]);
   REQUIRE(check_readings(array,size) == 2);
 }
 
 TEST_CASE("Test case 4") 
 {
-  int array[9] = {1,4,5,6,7,9,13,14,15};
-  int size = sizeof(array);
+  int array[7] = {3,3,5,4,10,11,12};
+  int size = sizeof(array)/sizeof(array[0]);
   REQUIRE(check_readings(array,size) == 5);
 }
-
+*/
 TEST_CASE("Test case 5") 
 {
   int array[8] = {1,4,5,6,7,8,9,13};
-  int size = sizeof(array);
+  int size = sizeof(array)/sizeof(array[0]);
+  sort_array(array,size;)
   REQUIRE(check_readings(array,size) == 5);
 }
 
