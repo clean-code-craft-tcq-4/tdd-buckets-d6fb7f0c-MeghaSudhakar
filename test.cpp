@@ -26,14 +26,14 @@ TEST_CASE("Test case 3")
   int size = sizeof(array)/sizeof(array[0]);
   REQUIRE(check_readings(array,size) == 2);
 }
-
+*/
 TEST_CASE("Test case 4") 
 {
-  int array[7] = {3,3,5,4,10,11,12};
+  int array[7] = {3,10,5,7,12,15,17};
   int size = sizeof(array)/sizeof(array[0]);
   REQUIRE(check_readings(array,size) == 5);
 }
-*/
+
 TEST_CASE("Test case 5") 
 {
   int array[7] = {3,3,5,4,10,11,12};
