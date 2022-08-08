@@ -53,7 +53,7 @@ void printArray(int array[], int size)
 int check_readings(int *array, int size)
 {
     static int count=0;
-    int i,flag,count_flag;
+    int i,flag;
     
     for(i=0; i<size; i++)
     {
@@ -62,19 +62,25 @@ int check_readings(int *array, int size)
             count= count+1;  
             flag=1;
             printf(" %d - %d", array[i], array[i]+1);
-        }  
+        } 
+        /*if ((array[i] == array[i+1]))
+        {
+            count= count+1;
+            flag=1;
+            printf(" %d - %d", array[i], array[i]+1);
+        }*/
         else
         {
-            if(flag)
+            if(flag==1)
             {
                 printf("\nArray has %d readings\n", count+1);
                 flag=0;
                 count=0;
-                
             }
             
             else
             {
+                flag = 2;
                 
             }
             
@@ -83,7 +89,10 @@ int check_readings(int *array, int size)
         }
         
     }
-    
+  
+    if(flag == 2)
+    printf("array does not have any consecutive readings");
+ 
     return 1;
 }
   
