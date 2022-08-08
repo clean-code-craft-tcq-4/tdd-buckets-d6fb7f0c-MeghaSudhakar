@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include "TDD.h"
 
-/*TEST_CASE("Test case 1") 
+TEST_CASE("Test case 1") 
 {
   int array[2] = {4,5};
   int size = sizeof(array)/sizeof(array[0]);
@@ -17,20 +17,22 @@ TEST_CASE("Test case 2")
 {
   int array[3] = {4,5,6};
   int size = sizeof(array)/sizeof(array[0]);
-  REQUIRE(check_readings(array,size) == 2);
+  sort_array(array,size);
+  REQUIRE(check_readings(array,size) == 1);
 }
 
 TEST_CASE("Test case 3") 
 {
   int array[4] = {4,5,6,9};
   int size = sizeof(array)/sizeof(array[0]);
-  REQUIRE(check_readings(array,size) == 2);
+  REQUIRE(check_readings(array,size) == 1);
 }
-*/
+
 TEST_CASE("Test case 4") 
 {
   int array[7] = {3,10,5,7,12,15,17};
   int size = sizeof(array)/sizeof(array[0]);
+  sort_array(array,size);
   REQUIRE(check_readings(array,size) == 1);
 }
 
