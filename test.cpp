@@ -38,7 +38,7 @@ TEST_CASE("Test case 5")
 {
   int array[8] = {1,4,5,6,7,8,9,13};
   int size = sizeof(array)/sizeof(array[0]);
-  sort_array(array,size;)
+  sort_array(array,size);
   REQUIRE(check_readings(array,size) == 5);
 }
 
