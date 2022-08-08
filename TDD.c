@@ -87,7 +87,7 @@ int check_readings(int *array, int size)
     }
   
     if(flag == 2)
-    printf("array does not have any consecutive readings");
+    printf("array does not have any consecutive readings\n");
 
     return 1;
 }
