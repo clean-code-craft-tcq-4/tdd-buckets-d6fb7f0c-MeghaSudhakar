@@ -70,6 +70,7 @@ int check_readings(int *array, int size)
                 printf("\nArray has %d readings\n", count+1);
                 flag=0;
                 count=0;
+                
             }
             
             else
@@ -82,6 +83,8 @@ int check_readings(int *array, int size)
         }
         
     }
+    
+    return 1;
 }
   
 
