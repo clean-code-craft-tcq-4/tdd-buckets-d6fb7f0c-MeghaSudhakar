@@ -31,7 +31,7 @@ TEST_CASE("Test case 4")
 {
   int array[7] = {3,10,5,7,12,15,17};
   int size = sizeof(array)/sizeof(array[0]);
-  REQUIRE(check_readings(array,size) == 5);
+  REQUIRE(check_readings(array,size) == 1);
 }
 
 TEST_CASE("Test case 5") 
