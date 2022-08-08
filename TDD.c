@@ -57,18 +57,18 @@ int check_readings(int *array, int size)
     
     for(i=0; i<size; i++)
     {
-        if ((array[i+1]) == (array[i] + 1))
+        if ((array[i] == array[i+1]))
+        {
+            count= count+1;
+            flag=1;
+            printf(" %d - %d", array[i], array[i+1]);
+        }
+        else if ((array[i+1]) == (array[i] + 1))
         {
             count= count+1;  
             flag=1;
             printf(" %d - %d", array[i], array[i]+1);
         } 
-        /*if ((array[i] == array[i+1]))
-        {
-            count= count+1;
-            flag=1;
-            printf(" %d - %d", array[i], array[i]+1);
-        }*/
         else
         {
             if(flag==1)
@@ -83,16 +83,12 @@ int check_readings(int *array, int size)
                 flag = 2;
                 
             }
-            
-          
-            //printf("\n");
         }
-        
     }
   
     if(flag == 2)
     printf("array does not have any consecutive readings");
- 
+
     return 1;
 }
   
