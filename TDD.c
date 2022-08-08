@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include "TDD.h"
 
-void sort_array(int *array, int size)
+void sort_array(int *array, int arraysize)
 {
     int i, j, min_idx; 
   
@@ -52,6 +52,9 @@ void printArray(int array[], int size)
 
 int check_readings(int *array, int size)
 {
+    static int count=0;
+    int i,flag,count_flag;
+    
     for(i=0; i<size; i++)
     {
         if ((array[i+1]) == (array[i] + 1))
