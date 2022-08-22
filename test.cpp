@@ -49,3 +49,12 @@ TEST_CASE("Test case 5")
   REQUIRE(check_readings(array,size) == 1);
 }
 
+TEST_CASE("Test case 6") 
+{
+  printf("Test case 6\n");
+  int array[10] = {3,3,5,4,10,11,12,23,21,22};
+  int size = sizeof(array)/sizeof(array[0]);
+  sort_array(array,size);
+  REQUIRE(check_readings(array,size) == 1);
+}
+
