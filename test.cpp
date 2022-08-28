@@ -61,6 +61,7 @@ TEST_CASE("Test case 6")
 TEST_CASE("ignoring error-readings - Test case 7") 
 {
   printf("ignoring error-readings - Test case 6\n");
-  REQUIRE(converter_check(5) == 0);
+  REQUIRE(AD_Converter(1000) == 0);
+  REQUIRE(converter_check(1000) == 0);
 }
 
