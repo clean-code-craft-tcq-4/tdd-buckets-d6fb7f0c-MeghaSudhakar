@@ -3,7 +3,7 @@
 #include "catch.hpp"
 #include <stdio.h>
 #include <stdlib.h>
-#include "TDD.h"
+#include "DetectandOutput_RangeandReadings.h"
 
 TEST_CASE("Test case 1") 
 {
