@@ -1,4 +1,4 @@
-#include "AD_converter.c"
+#include "ADCtoAmpConverter.h"
 
 AD_Converter(int value)
 {
