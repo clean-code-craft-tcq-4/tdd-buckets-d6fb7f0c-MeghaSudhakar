@@ -3,9 +3,9 @@
 
 #include "catch.hpp"
 #include <stdio.h>
+#include "test.h"
 #include <stdlib.h>
 #include "ADCtoAmpConverter.h"
-#include "test.h"
 #include <string.h>
 
 const AdcParameters AdcParameterStruct = {
