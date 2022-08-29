@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <assert.h>
 #include <stdlib.h>
-#include "DetectandOutput_RangeandReadings.h"
+#include "Detect_Range_Readings.h"
 
 void sort_array(int *array, int arraysize)
 {
