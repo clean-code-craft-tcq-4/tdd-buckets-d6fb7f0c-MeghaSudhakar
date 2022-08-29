@@ -4,7 +4,7 @@
 #include "catch.hpp"
 #include "test_converter.h"
 #include <string.h>
-#include "ADCToAmpConverter.h"
+#include "ADCtoAmpConverter.h"
 #include "Detect_Range_Readings.h"
 
 
