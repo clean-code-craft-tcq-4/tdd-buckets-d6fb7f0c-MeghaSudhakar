@@ -1,20 +1,21 @@
 #include "ADCtoAmpConverter.h"
 
-AD_Converter(int value)
-{
-  //If the A2D reports 1146, it is 10 Amps * 1146 / 4094 = 2.799 Amps, which is rounded-off to the nearest integer 3
-  amps = 10 * value / 4094;
-  return amps;
-}
+#define CONVERT_ADC_AMP(AdcValue)   ((float)((AdcParameterStruct.AdcConversionScale*(ADCValue))/(float)(AdcParameterStruct.MaxValueReadByAdc)) + (float)AdcParameterStruct.AdcConversionOffset)
+#define IS_GREATER_THAN_MAX_VALUE(ADCValue)  (ADCValue > AdcParameterStruct.MaxValueReadByAdc)
 
-converter_check(int amps)
+int ConvertAdcToAmp(int ADCValue, int* CurrentInAmp)
 {
-  if(amps >= 10)
-  {
-    return 1;
-  }
-  else
-  {
-    return 0;
-  }
+ int returnValue = ADCToAmpConversionNotSucessful;
+ 
+ if(IS_GREATER_THAN_MAX_VALUE(ADCValue))
+ {
+  returnValue = ADCToAmpConversionNotSucessful;  
+ }
+ else
+ {
+  *CurrentInAmp = CONVERT_ADC_AMP(ADCValue);
+   returnValue = ADCToAmpConversionSucessful;
+ }
+ 
+  return returnValue;
 }
