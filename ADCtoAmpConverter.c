@@ -3,26 +3,8 @@
 #define CONVERT_ADC_AMP(AdcValue)   ((float)((AdcParameterStruct.AdcConversionScale*(ADCValue))/(float)(AdcParameterStruct.MaxValueReadByAdc)) + (float)AdcParameterStruct.AdcConversionOffset)
 #define IS_GREATER_THAN_MAX_VALUE(ADCValue)  (ADCValue > AdcParameterStruct.MaxValueReadByAdc)
 
-int ConvertAdcToAmp(int ADCValue, int* CurrentInAmp)
-{
- int returnValue = ADCToAmpConversionNotSucessful;
- 
- if(IS_GREATER_THAN_MAX_VALUE(ADCValue))
- {
-  returnValue = ADCToAmpConversionNotSucessful;  
- }
- else
- {
-  *CurrentInAmp = RoundOffTo_NearInteger(CONVERT_ADC_AMP(ADCValue));
-   returnValue = ADCToAmpConversionSucessful;
- }
- 
-  return returnValue;
-}
-
 static int RoundOffTo_NearInteger(float num)
 {
-
     int tempCheck, roundNum, tempNum;
 
     if(num>0)
@@ -66,3 +48,21 @@ static int RoundOffTo_NearInteger(float num)
     getch();
     return 0;
 }
+
+int ConvertAdcToAmp(int ADCValue, int* CurrentInAmp)
+{
+ int returnValue = ADCToAmpConversionNotSucessful;
+ 
+ if(IS_GREATER_THAN_MAX_VALUE(ADCValue))
+ {
+  returnValue = ADCToAmpConversionNotSucessful;  
+ }
+ else
+ {
+  *CurrentInAmp = RoundOffTo_NearInteger(CONVERT_ADC_AMP(ADCValue));
+   returnValue = ADCToAmpConversionSucessful;
+ }
+ 
+  return returnValue;
+}
+
