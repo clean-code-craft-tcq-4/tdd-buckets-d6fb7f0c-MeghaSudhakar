@@ -1,4 +1,5 @@
 #include "ADCtoAmpConverter.h"
+#include<conio.h>
 
 #define CONVERT_ADC_AMP(AdcValue)   ((float)((AdcParameterStruct.AdcConversionScale*(ADCValue))/(float)(AdcParameterStruct.MaxValueReadByAdc)) + (float)AdcParameterStruct.AdcConversionOffset)
 #define IS_GREATER_THAN_MAX_VALUE(ADCValue)  (ADCValue > AdcParameterStruct.MaxValueReadByAdc)
@@ -42,11 +43,9 @@ static int RoundOffTo_NearInteger(float num)
     }
     else
     {
-        return num;
+        return 0;
         //printf("\nThe given number is 0");
     }
-    getch();
-    return 0;
 }
 
 int ConvertAdcToAmp(int ADCValue, int* CurrentInAmp)
