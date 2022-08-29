@@ -16,4 +16,4 @@ typedef struct{
 
 extern const AdcParameters AdcParameterStruct;
 int ConvertAdcToAmp(int ADCValue, int* CurrentInAmp);
-static int RoundOffTo_NearInteger(float num);
+
