@@ -1,5 +1,6 @@
 #pragma once
 #include "ADCToAmpConverter.h"
+#include "Detect_Range_Readings.h"
 
 static inline void validateAdcConverter_NoError(int AdcOutput, int ExpectedCurrentInAmp)
 {
