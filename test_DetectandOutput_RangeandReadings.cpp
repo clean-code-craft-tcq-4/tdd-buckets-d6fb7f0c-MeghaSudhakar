@@ -58,10 +58,4 @@ TEST_CASE("Test case 6")
   REQUIRE(check_readings(array,size) == 1);
 }
 
-TEST_CASE("ignoring error-readings - Test case 7") 
-{
-  printf("ignoring error-readings - Test case 6\n");
-  REQUIRE(AD_Converter(1000) == 0);
-  REQUIRE(converter_check(1000) == 0);
-}
 
