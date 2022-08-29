@@ -5,7 +5,8 @@
 #include "test_converter.h"
 #include <string.h>
 #include "ADCToAmpConverter.h"
-#include <stdio.h>
+#include "Detect_Range_Readings.h"
+
 
 const AdcParameters AdcParameterStruct = {
   0,      // MinCurrentSensedByAdc in Amp
