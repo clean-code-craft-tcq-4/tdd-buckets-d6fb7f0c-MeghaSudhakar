@@ -20,8 +20,8 @@ static int RoundOffTo_NearInteger(float num)
         {
             roundNum = num;
         }
-     return num;
-        //printf("\nWhole number after rounding off the given real number = %d", roundNum);
+     return roundNum;
+        printf("\nWhole number after rounding off the given real number = %d", roundNum);
     }
     else if(num<0)
     {
@@ -37,13 +37,13 @@ static int RoundOffTo_NearInteger(float num)
         {
             roundNum = num;
         }
-     return num;
-        //printf("\nWhole number after rounding off the given real number = -%d", roundNum);
+     return roundNum;
+        printf("\nWhole number after rounding off the given real number = -%d", roundNum);
     }
     else
     {
         return 0;
-        //printf("\nThe given number is 0");
+        printf("\nThe given number is 0");
     }
 }
 
