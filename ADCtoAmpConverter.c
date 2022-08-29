@@ -13,9 +13,56 @@ int ConvertAdcToAmp(int ADCValue, int* CurrentInAmp)
  }
  else
  {
-  *CurrentInAmp = CONVERT_ADC_AMP(ADCValue);
+  *CurrentInAmp = RoundOffTo_NearInteger(CONVERT_ADC_AMP(ADCValue));
    returnValue = ADCToAmpConversionSucessful;
  }
  
   return returnValue;
+}
+
+static int RoundOffTo_NearInteger(float num)
+{
+
+    int tempCheck, roundNum, tempNum;
+
+    if(num>0)
+    {
+        tempNum = num*10;
+        tempCheck = tempNum%10;
+        if(tempCheck>=5)
+        {
+            roundNum = num;
+            roundNum++;
+        }
+        else
+        {
+            roundNum = num;
+        }
+     return num;
+        //printf("\nWhole number after rounding off the given real number = %d", roundNum);
+    }
+    else if(num<0)
+    {
+        num = -(num);
+        tempNum = num*10;
+        tempCheck = tempNum%10;
+        if(tempCheck>=5)
+        {
+            roundNum = num;
+            roundNum--;
+        }
+        else
+        {
+            roundNum = num;
+        }
+     return num;
+        //printf("\nWhole number after rounding off the given real number = -%d", roundNum);
+    }
+    else
+    {
+        return num;
+        //printf("\nThe given number is 0");
+    }
+    getch();
+    return 0;
 }
