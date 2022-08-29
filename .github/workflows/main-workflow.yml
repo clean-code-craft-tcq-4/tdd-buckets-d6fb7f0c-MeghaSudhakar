@@ -16,7 +16,7 @@ jobs:
         sudo apt-get install -y gcovr
 
     - name: build_TDD1ADCToAmp
-      run: g++ -Wall -Wextra -fprofile-arcs -ftest-coverage -o ChargingAdcToAmp test_ADCtoAmpConverter.cpp ADCToAmpConverter.c Detect_Range_Readings.c
+      run: g++ -Wall -Wextra -fprofile-arcs -ftest-coverage -o TDD1ADCToAmp test_ADCtoAmpConverter.cpp ADCToAmpConverter.c Detect_Range_Readings.c
       
     - name: run_TDD1ADCToAmp
       run: ./TDD1ADCToAmp
