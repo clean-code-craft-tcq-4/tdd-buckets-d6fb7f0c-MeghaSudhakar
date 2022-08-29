@@ -1,6 +1,5 @@
 #pragma once
 #include "ADCToAmpConverter.h"
-#include "BatteryChargeAnalyser.h"
 
 static inline void validateAdcConverter_NoError(int AdcOutput, int ExpectedCurrentInAmp)
 {
