@@ -12,3 +12,6 @@ typedef struct{
   int AdcConversionOffset;
   int MaxValueReadByAdc;
 }AdcParameters;
+
+
+int ConvertAdcToAmp(int ADCValue, int* CurrentInAmp);
