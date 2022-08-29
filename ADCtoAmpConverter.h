@@ -1,3 +1,4 @@
+#pragma once
 #include <stdbool.h>
 #include <string.h>
 #include <float.h>
@@ -13,5 +14,5 @@ typedef struct{
   int MaxValueReadByAdc;
 }AdcParameters;
 
-
+extern const AdcParameters AdcParameterStruct;
 int ConvertAdcToAmp(int ADCValue, int* CurrentInAmp);
